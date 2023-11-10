@@ -54,8 +54,7 @@ helm-run \
 --conf-paths run_specs_$EXAMPLES_PER_SCENARIO.conf \
 --suite $LEADERBOARD_VERSION \
 --max-eval-instances $EXAMPLES_PER_SCENARIO \
---enable-huggingface-models $MODEL_TO_RUN \
---cache-instances \
+--models-to-run $MODEL_TO_RUN \
 --num-train-trials 1 \
 --skip-completed-runs
 ```
